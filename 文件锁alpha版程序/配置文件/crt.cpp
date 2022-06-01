@@ -3,8 +3,8 @@
 #include "stdio.h"
 #include <stdlib.h>
 
-//文档修改模块
-void fileop();
+//文件修改模块
+void edit();
 void CRT()
 {
     FILE *read,*write;
@@ -20,19 +20,16 @@ void CRT()
         while(fscanf(read,"%c",&wrt)==1)
             printf("%c",wrt);
         printf("\n");
-        printf("Press 1 to edit,press enter to save.");
+        printf("Press 1 to edit,Press enter to save.\n");
         
         int u;
         scanf("%d",&u);
-
         if(u==1)
-        {
-            fileop();
-        }
+            edit();
     }
 }
 
-void fileop()
+void edit()
 {
     FILE *wrtin;
     wrtin=fopen(".file.txt","wb");

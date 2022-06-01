@@ -11,7 +11,7 @@ int main()
     fgets(R,99,rights);
     fputs(R,stdout);
 
-    std::cout<<"    Press 1 to register your password;press 2 to edit your file."<<std::endl;
+    std::cout<<"\nPress 1 to register your password;press 2 to edit your file."<<std::endl;
     int ch;
     std::cin>>ch;
 
