@@ -67,7 +67,7 @@ bool GetHttpResponse(const string &url,char* &response,int &read)
     struct hostent* hp=gethostbyname(host.c_str());
     if(hp==NULL)
     {
-        cout<<"Error:please check host address"<<endl;
+        cout<<"Error:host name error"<<endl;
         return false;
     }
 
@@ -238,6 +238,7 @@ void DOWNLOADIMG(vector<string> &imgurls,const string &url)
     if(!CreateDirectory(foldname.c_str(),NULL))
     {
         cout<<"Error:can not create folder"<<endl;
+        cout<<"Please check if the folder exists"<<endl;
     }
     char* image;
     int byteRead;

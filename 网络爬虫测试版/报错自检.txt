@@ -1,0 +1,8 @@
+    错误报告                    可能错误原因
+1.  Error:URL error             无法解析主机名或输入的网址不正确
+2.  Error:host name error       无法解析主机名
+3.  Error:socket error          无法解析主机名或输入的网址不正确
+4.  Error:can not connect--     未连接到局域网或访问超时
+5.  Error:sending error         无法解析主机名,未连接到局域网或访问超时
+6.  Error:can not create folder 文件夹已存在或程序路径被修改
+7.  The url is wrong! ignore.   向网站发送的抓取申请未通过或输入的网址不正确
